@@ -1,13 +1,15 @@
 // (Method 1): Traditional Method:
 
 let palandrome=[12153456789];
-
+// We will convert to string because it is one element and can not reverse directly by converting to to string it will reverse easily
 let result1=palandrome.toString();
 console.log(result1);
+// we split because to convert into multiple sub string to check one by one 
 let result2=result1.split("");
 console.log(result2);
-
+// by converting into sub string we will put into an array 
 let result3=result2.map((value)=>value)
+// we reverse because to check the whether the first index and last index is same or not
 let result4=result3.reverse();
 console.log(result4);
 
